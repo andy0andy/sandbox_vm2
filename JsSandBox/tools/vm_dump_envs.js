@@ -68,6 +68,9 @@ function enum_obj_proto_descriptors(obj, obj_name, obj_descriptors) {
             case "string":
                 return `sandbox_vm2.defineProperty(${obj_name}.prototype, '${obj_key}', '${value}', true, true, true)`;
             case "function":
+                if (obj_key === "constructor"){
+                    return "";
+                }
                 return `sandbox_vm2.defineProperty(${obj_name}.prototype, '${obj_key}', function ${obj_key}(){debugger;}, true, true, true); sandbox_vm2.func_set_native(${obj_name}.prototype.${obj_key});`;
             case "number":
                 return `sandbox_vm2.defineProperty(${obj_name}.prototype, '${obj_key}', ${value}, true, true, true)`;

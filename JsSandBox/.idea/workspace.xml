@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c409082-8ec6-4a17-9a97-b5a27c7f6a1b" name="变更" comment="" />
+    <list default="true" id="6c409082-8ec6-4a17-9a97-b5a27c7f6a1b" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/Navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/Navigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/ProxyObject.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/ProxyObject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/envs.node.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/envs.node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/vm_dump_envs.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/vm_dump_envs.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,10 +32,16 @@
       </map>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2OUqOPbUgPRL0BVvvtTDnnfY3HX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,7 +53,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "17.9.0",
     "javascript.nodejs.core.library.typings.version": "",
-    "last_opened_file_path": "C:/Users/andyhah/Downloads/2022JS01.黑盒调用&vm2调试&模块化补环境框架的搭建和实现课件/2022JS01.黑盒调用&vm2调试&模块化补环境框架的搭建和实现课件/zhvmp.js",
+    "last_opened_file_path": "D:/git-project/sandbox_vm2/JsSandBox",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "ts.external.directory.path": "F:\\PyCharm 2022.1.4\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
   }
@@ -52,13 +65,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.main.js">
+    <configuration name="debugJS.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="./debugJS.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="debugJS.js (2)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="./debugJS.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="debugJS.js (3)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="./debugJS.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <configuration name="debugJS.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="./debugJS.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/main.js" working-dir="$PROJECT_DIR$">
@@ -92,10 +105,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.main.js" />
+        <item itemvalue="Node.js.debugJS.js (1)" />
         <item itemvalue="Node.js.tools.node.js" />
         <item itemvalue="Node.js.debugJS.js (3)" />
         <item itemvalue="Node.js.debugJS.js (2)" />
-        <item itemvalue="Node.js.debugJS.js" />
       </list>
     </recent_temporary>
   </component>
@@ -109,6 +122,7 @@
       <updated>1681625475232</updated>
       <workItem from="1681625476369" duration="242000" />
       <workItem from="1681625720158" duration="25737000" />
+      <workItem from="1681739257360" duration="13077000" />
     </task>
     <servers />
   </component>

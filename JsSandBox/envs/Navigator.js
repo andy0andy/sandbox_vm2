@@ -4,10 +4,6 @@ Navigator = function Navigator() {
 sandbox_vm2.func_set_native(Navigator);
 sandbox_vm2.rename(Navigator.prototype, "Navigator");
 
-Navigator.prototype.appVersion = "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36";
-Navigator.prototype.appName = "Netscape";
-Navigator.prototype.appCodeName = "Mozilla";
-
 // add
 sandbox_vm2.defineProperty(Navigator.prototype, 'vendorSub', '', true, true, true)
 sandbox_vm2.defineProperty(Navigator.prototype, 'productSub', '20030107', true, true, true)
@@ -39,7 +35,7 @@ sandbox_vm2.defineProperty(Navigator.prototype, 'getGamepads', function getGamep
 sandbox_vm2.defineProperty(Navigator.prototype, 'javaEnabled', function javaEnabled(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Navigator.prototype.javaEnabled);
 sandbox_vm2.defineProperty(Navigator.prototype, 'sendBeacon', function sendBeacon(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Navigator.prototype.sendBeacon);
 sandbox_vm2.defineProperty(Navigator.prototype, 'vibrate', function vibrate(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Navigator.prototype.vibrate);
-sandbox_vm2.defineProperty(Navigator.prototype, 'constructor', function constructor(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Navigator.prototype.constructor);
+// sandbox_vm2.defineProperty(Navigator.prototype, 'constructor', function constructor(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Navigator.prototype.constructor);
 sandbox_vm2.defineProperty(Navigator.prototype, 'bluetooth', {}, true, true, true)
 sandbox_vm2.defineProperty(Navigator.prototype, 'clipboard', {}, true, true, true)
 sandbox_vm2.defineProperty(Navigator.prototype, 'credentials', {}, true, true, true)
