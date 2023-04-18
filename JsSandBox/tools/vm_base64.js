@@ -266,4 +266,5 @@ sandbox_vm2.base64 = {
     }
 }
 
-// console.log(base64.encode("123"))
+// console.log(base64.encode("123456abcdefg"))
+// console.log(base64.decode("MTIzNDU2YWJjZGVmZw=="))

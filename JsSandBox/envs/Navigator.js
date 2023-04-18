@@ -35,7 +35,6 @@ sandbox_vm2.defineProperty(Navigator.prototype, 'getGamepads', function getGamep
 sandbox_vm2.defineProperty(Navigator.prototype, 'javaEnabled', function javaEnabled(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Navigator.prototype.javaEnabled);
 sandbox_vm2.defineProperty(Navigator.prototype, 'sendBeacon', function sendBeacon(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Navigator.prototype.sendBeacon);
 sandbox_vm2.defineProperty(Navigator.prototype, 'vibrate', function vibrate(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Navigator.prototype.vibrate);
-// sandbox_vm2.defineProperty(Navigator.prototype, 'constructor', function constructor(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Navigator.prototype.constructor);
 sandbox_vm2.defineProperty(Navigator.prototype, 'bluetooth', {}, true, true, true)
 sandbox_vm2.defineProperty(Navigator.prototype, 'clipboard', {}, true, true, true)
 sandbox_vm2.defineProperty(Navigator.prototype, 'credentials', {}, true, true, true)

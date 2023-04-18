@@ -1,6 +1,6 @@
 // 沙箱对象
 sandbox_vm2 = {
     config: {
-        proxy: true     // 是否显示代理
+        proxy: false     // 是否显示代理
     }
 }
