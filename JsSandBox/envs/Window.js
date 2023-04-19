@@ -16,7 +16,7 @@ delete GLOBAL;
 
 window = globalThis;
 Object.setPrototypeOf(window, Window.prototype)
-window.atob = sandbox_vm2.base64.decode
-window.btoa = sandbox_vm2.base64.encode
+window.atob = sandbox_vm2.base64.base64decode;
+window.btoa = sandbox_vm2.base64.base64encode;
 
 

@@ -27,13 +27,15 @@ sandbox_vm2.proxy = function (obj, objname, type) {
             if (result instanceof Object) {
                 if (typeof result === "function") {
                     console.log(`[${WatchName}] getting propKey is [${propKey}] , it is function`)
-                    //return new Proxy(result,getMethodHandler(WatchName))
+                    return new Proxy(result,getMethodHandler(WatchName))
                 } else {
                     console.log(`[${WatchName}] getting propKey is [${propKey}], result is [${(result)}]`);
                 }
                 return new Proxy(result, getObjhandler(`${WatchName}.${propKey}`))
             }
-            console.log(`[${WatchName}] getting propKey is [${propKey?.description ?? propKey}], result is [${result}]`);
+            if(typeof(propKey) !== "symbol" && propKey !== "toString") {
+                console.log(`[${WatchName}] getting propKey is [${propKey?.description ?? propKey}], result is [${result}]`);
+            }
             return result;
         },
         set(target, propKey, value, receiver) {
@@ -87,16 +89,16 @@ sandbox_vm2.proxy = function (obj, objname, type) {
             console.log(`[${WatchName}] invoke ownkeys, result is [${(result)}]`)
             return result
         },
-        apply(target, thisArg, argArray) {
-            let result = Reflect.apply(target, thisArg, argArray)
-            console.log(`[${WatchName}] apply function name is [${target.name}], argArray is [${argArray}], result is [${result}].`)
-            return result
-        },
-        construct(target, argArray, newTarget) {
-            var result = Reflect.construct(target, argArray, newTarget)
-            console.log(`[${WatchName}] construct function name is [${target.name}], argArray is [${argArray}], result is [${(result)}].`)
-            return result;
-        }
+        // apply(target, thisArg, argArray) {
+        //     let result = Reflect.apply(target, thisArg, argArray)
+        //     console.log(`[${WatchName}] apply function name is [${target.name}], argArray is [${argArray}], result is [${result}].`)
+        //     return result
+        // },
+        // construct(target, argArray, newTarget) {
+        //     var result = Reflect.construct(target, argArray, newTarget)
+        //     console.log(`[${WatchName}] construct function name is [${target.name}], argArray is [${argArray}], result is [${(result)}].`)
+        //     return result;
+        // }
     }
     return handler;
 }
