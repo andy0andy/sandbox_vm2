@@ -8,11 +8,12 @@ const fs = require("fs");
 function GetCode() {
     let code = ""
 
-    code += ReadCode("tools.config.js")
+    code += ReadCode("tools.config.js")     // 配置
+    code += ReadCode("tools.memory.js")     // 共享内存
 
     // 批量读取
     fs.readdirSync(`${__dirname}`).forEach((filename) => {
-        if (filename !== "tools.node.js" && filename !== "tools.config.js"){
+        if (!filename.startsWith("tools.")){
             code += ReadCode(filename);
         }
     })

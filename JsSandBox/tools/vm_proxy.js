@@ -58,7 +58,7 @@ sandbox_vm2.proxy = function (obj, objname, type) {
         },
         getOwnPropertyDescriptor(target, propKey) {
             var result = Reflect.getOwnPropertyDescriptor(target, propKey);
-            console.log(`[${WatchName}] getOwnPropertyDescriptor  propKey [${propKey}] result is [${(result)}]`)
+            // console.log(`[${WatchName}] getOwnPropertyDescriptor  propKey [${propKey}] result is [${(result)}]`)
             return result;
         },
         defineProperty(target, propKey, attributes) {

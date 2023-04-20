@@ -2,18 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c409082-8ec6-4a17-9a97-b5a27c7f6a1b" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/JsSandBox.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/datasheets.js" beforeDir="false" afterPath="$PROJECT_DIR$/code/datasheets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/zhvmp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/Document.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/Document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/Element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/EventTarget.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/EventTarget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/HTMLCollection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/HTMLDivElement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/HTMLDocument.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/HTMLDocument.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/HTMLElement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/HTMLScriptElement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/Navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/Navigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/Node.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/Node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/ProxyObject.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/envs/Window.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/Window.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/envs.node.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/envs.node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/initElement/init_element.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/tools.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/tools.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/vm_base64.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/vm_base64.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/tools.node.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/tools.node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/vm_base64.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/vm_dump_envs.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/vm_dump_envs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/vm_memory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/vm_nativeFunction.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/vm_nativeFunction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/vm_proxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/vm_proxy.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,8 +70,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "17.9.0",
-    "javascript.nodejs.core.library.typings.version": "",
-    "last_opened_file_path": "C:/Users/andyhah/Downloads/test.js",
+    "javascript.nodejs.core.library.typings.version": "17.0.45",
+    "last_opened_file_path": "D:/git-project/sandbox_vm2/JsSandBox",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "ts.external.directory.path": "F:\\PyCharm 2022.1.4\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
   }
@@ -75,13 +87,13 @@
     <configuration name="debugJS.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="./debugJS.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="debugJS.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="./debugJS.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/main.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$USER_HOME$/Downloads/test.js" working-dir="$USER_HOME$/Downloads">
-      <method v="2" />
-    </configuration>
-    <configuration name="tools.node.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/tools/tools.node.js" working-dir="$PROJECT_DIR$/tools">
       <method v="2" />
     </configuration>
     <configuration name="vm_base64.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/tools/vm_base64.js" working-dir="$PROJECT_DIR$/tools">
@@ -112,10 +124,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.main.js" />
+        <item itemvalue="Node.js.debugJS.js" />
         <item itemvalue="Node.js.test.js" />
         <item itemvalue="Node.js.vm_base64.js" />
         <item itemvalue="Node.js.debugJS.js (1)" />
-        <item itemvalue="Node.js.tools.node.js" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +141,9 @@
       <updated>1681625475232</updated>
       <workItem from="1681625476369" duration="242000" />
       <workItem from="1681625720158" duration="25737000" />
-      <workItem from="1681739257360" duration="34307000" />
+      <workItem from="1681739257360" duration="35066000" />
+      <workItem from="1682002833139" duration="18000" />
+      <workItem from="1682002853507" duration="374000" />
     </task>
     <servers />
   </component>
@@ -138,26 +152,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$USER_HOME$/Downloads/test.js</url>
-          <line>11258</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$USER_HOME$/Downloads/test.js</url>
-          <line>11242</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$USER_HOME$/Downloads/test.js</url>
-          <line>11226</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="javascript-exception" />
       </default-breakpoints>

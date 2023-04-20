@@ -12,19 +12,13 @@ function GetCode() {
     code += ReadCode("Node.js");
     code += ReadCode("Document.js");
     code += ReadCode("HTMLDocument.js");
-
-    code += ReadCode("Element.js");
-    code += ReadCode("HTMLElement.js");
-    code += ReadCode("HTMLDivElement.js");
-
-    code += ReadCode("initElement/init_element.js");
-
-    code += ReadCode("Navigator.js");
+    
     code += ReadCode("Window.js");
+    code += ReadCode("Navigator.js");
 
+    code += ReadCode("initEnvs/init_dom.js");
+    code += ReadCode("initEnvs/init_bom.js");
 
-    // 代理 hook
-    code += ReadCode("ProxyObject.js");
 
     code += ";debugger;\r\n"
 
