@@ -3,7 +3,9 @@
 */
 
 sandbox_vm2.memory = {
-    "dom": {},
+    "dom": {
+        "Document_getElementsByTagName": {} // Document.getElementsByTagName
+    },
     "bom": {},
     "algs": {},  // 算法
     "events": {

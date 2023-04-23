@@ -18,7 +18,7 @@ function enum_obj_descriptors(obj, objName, obj_Descriptors) {
     let code = ""
 
     function getcode(obj, objName, objkey, objDescriptor) {
-        var value = obj[objkey]
+        let value = obj[objkey]
         if (objDescriptor["value"] !== undefined) {
             // function
             if (objkey === "constructor") {
@@ -94,7 +94,7 @@ function enum_obj_proto_descriptors(obj, objName, obj_Descriptors) {
 
     function getcode(obj, objName, objkey, objDescriptor) {
         if (obj) {
-            var value = obj[objkey]
+            let value = obj[objkey]
             if (objDescriptor["value"] !== undefined) {
                 // function
                 if (objkey === "constructor") {
@@ -208,7 +208,7 @@ function enum_obj_proto_descriptors(obj, objName, obj_Descriptors) {
 
 function dump_main(obj, objName) {
     let code = ""
-    var isSelf = {
+    let isSelf = {
         "flag": true
     }
     let obj_Descriptors = getOwnPropertyDescriptors(obj, isSelf)

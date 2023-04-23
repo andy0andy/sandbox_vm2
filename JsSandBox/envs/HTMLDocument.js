@@ -8,7 +8,3 @@ Object.setPrototypeOf(HTMLDocument.prototype,Document.prototype)
 
 
 
-document = {}
-Object.setPrototypeOf(document, HTMLDocument.prototype);
-document = sandbox_vm2.proxy(document, "document");
-

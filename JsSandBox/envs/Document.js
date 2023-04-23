@@ -204,7 +204,12 @@ sandbox_vm2.defineProperty(Document.prototype, 'exitPointerLock', function exitP
 sandbox_vm2.defineProperty(Document.prototype, 'getElementById', function getElementById(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.getElementById)
 sandbox_vm2.defineProperty(Document.prototype, 'getElementsByClassName', function getElementsByClassName(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.getElementsByClassName)
 sandbox_vm2.defineProperty(Document.prototype, 'getElementsByName', function getElementsByName(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.getElementsByName)
-sandbox_vm2.defineProperty(Document.prototype, 'getElementsByTagName', function getElementsByTagName(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.getElementsByTagName)
+sandbox_vm2.defineProperty(Document.prototype, 'getElementsByTagName', function getElementsByTagName(name){
+    if (sandbox_vm2.memory["dom"]["Document_getElementsByTagName"][`datasheets_${name}`]){
+        return sandbox_vm2.memory["dom"]["Document_getElementsByTagName"][`datasheets_${name}`];
+    }
+    debugger;
+}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.getElementsByTagName)
 sandbox_vm2.defineProperty(Document.prototype, 'getElementsByTagNameNS', function getElementsByTagNameNS(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.getElementsByTagNameNS)
 sandbox_vm2.defineProperty(Document.prototype, 'getSelection', function getSelection(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.getSelection)
 sandbox_vm2.defineProperty(Document.prototype, 'hasFocus', function hasFocus(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.hasFocus)

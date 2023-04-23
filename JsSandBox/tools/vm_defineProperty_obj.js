@@ -1,7 +1,12 @@
 sandbox_vm2.defineProperty = function defineProperty(obj, key, value, configurable, enumerable, writable, getter, setter) {
-    let attr = {
-        configurable: configurable,
-        enumerable: enumerable,
+
+    let attr = {}
+
+    if (configurable !== undefined){
+        attr["configurable"] = configurable;
+    }
+    if (enumerable !== undefined){
+        attr["enumerable"] = enumerable;
     }
     if (writable !== undefined){
         attr["writable"] = writable;

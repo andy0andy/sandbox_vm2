@@ -12,20 +12,4 @@ sandbox_vm2.defineProperty(Window.prototype, 'PERSISTENT', 1, false, true, false
 
 
 
-window = globalThis;
-Object.setPrototypeOf(window, Window.prototype)
-
-
-delete global;
-delete Buffer;
-delete VMError;
-delete GLOBAL;
-
-
-window.atob = sandbox_vm2.memory["algs"]["base64"].base64decode;
-window.btoa = sandbox_vm2.memory["algs"]["base64"].base64encode;
-
-
-window = sandbox_vm2.proxy(window, "window");
-
 

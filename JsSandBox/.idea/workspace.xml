@@ -3,29 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="6c409082-8ec6-4a17-9a97-b5a27c7f6a1b" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/zhvmp.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/envs/Document.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/Document.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/envs/Element.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envs/EventTarget.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/EventTarget.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/envs/HTMLCollection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envs/HTMLDivElement.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/envs/HTMLDocument.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/HTMLDocument.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/envs/HTMLElement.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envs/HTMLScriptElement.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/envs/Navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/Navigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/envs/Node.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/Node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/envs/ProxyObject.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/envs/Window.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/Window.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/envs/envs.node.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/envs.node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/envs/initElement/init_element.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/initEnvs/init_bom.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/initEnvs/init_bom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/initEnvs/init_dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/envs/initEnvs/init_dom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/tools.memory.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/tools.memory.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/tools.node.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/tools.node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/vm_base64.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/vm_dump_envs.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/vm_dump_envs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/vm_memory.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/vm_nativeFunction.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/vm_nativeFunction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/vm_proxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/vm_proxy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/vm_defineProperty_obj.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/vm_defineProperty_obj.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/vm_dump_envs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/vm_throw_error.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/vm_throw_error.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,19 +53,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "17.9.0",
-    "javascript.nodejs.core.library.typings.version": "17.0.45",
-    "last_opened_file_path": "D:/git-project/sandbox_vm2/JsSandBox",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "ts.external.directory.path": "F:\\PyCharm 2022.1.4\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;17.9.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;17.0.45&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/git-project/sandbox_vm2/JsSandBox&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;F:\\PyCharm 2022.1.4\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\js-project\JsSandBox\tools" />
@@ -144,6 +133,8 @@
       <workItem from="1681739257360" duration="35066000" />
       <workItem from="1682002833139" duration="18000" />
       <workItem from="1682002853507" duration="374000" />
+      <workItem from="1682223582636" duration="376000" />
+      <workItem from="1682224274992" duration="2399000" />
     </task>
     <servers />
   </component>

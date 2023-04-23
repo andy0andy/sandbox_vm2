@@ -13,21 +13,26 @@ function GetCode() {
     code += ReadCode("Document.js");
     code += ReadCode("HTMLDocument.js");
     
+    code += ReadCode("Element.js");
+    code += ReadCode("HTMLElement.js");
+    code += ReadCode("HTMLScriptElement.js");
+    code += ReadCode("HTMLCollection.js");
+
     code += ReadCode("Window.js");
     code += ReadCode("Navigator.js");
 
-    code += ReadCode("initEnvs/init_dom.js");
     code += ReadCode("initEnvs/init_bom.js");
+    code += ReadCode("initEnvs/init_dom.js");
 
 
-    code += ";debugger;\r\n"
+    code += ";debugger;\r\n\r\n"
 
 
     return code;
 }
 
 function ReadCode(name) {
-    return fs.readFileSync(`${__dirname}/${name}`, "utf-8") + "\r\n"
+    return fs.readFileSync(`${__dirname}/${name}`, "utf-8") + "\r\n\r\n"
 }
 
 

@@ -6077,9 +6077,9 @@ var reese84;
             function _0x5dcbd1() {
                 var _0x21a407 = _0x51badf
                     , _0x2e9a0a = (0x0,
-                    _0x5e09c9[_0x21a407(0x271) + _0x21a407(0x259) + _0x21a407(0x326) + 't'])();
+                    _0x5e09c9["findChallengeScript"])();
                 return (0x0,
-                    _0x5e09c9[_0x21a407(0x2fd) + _0x21a407(0x394)])(_0x2e9a0a[_0x21a407(0xe3)]);
+                    _0x5e09c9["stripQuery"])(_0x2e9a0a["src"]);
             }
 
             _0x2858b3[_0x51badf(0x168) + _0x51badf(0x1cb)] = _0x51badf(0x207) + '4',
@@ -6149,9 +6149,11 @@ var reese84;
 
                 function _0x4c4e71(_0x4841af, _0x39a05c, _0x3be356) {
                     var _0x29036d = a1_0x3299;
-                    this[_0x29036d(0x348) + _0x29036d(0x2ee)] = _0x39a05c[_0x29036d(0x2df)](window),
-                        this[_0x29036d(0x150) + _0x29036d(0x111)] = _0x29036d(0x13d) == typeof _0x4841af ? _0x4841af : _0x4841af(),
-                        this[_0x29036d(0x154) + _0x29036d(0x340) + _0x29036d(0x3a2) + _0x29036d(0x37c)] = _0x3be356;
+                    debugger;
+                    this["httpClient"] = _0x39a05c["bind"](window),
+                    // this["postbackUrl"] = "string" == typeof _0x4841af ? _0x4841af : _0x4841af(),
+                    this["postbackUrl"] = 'https://www.datasheets.com/ckly-was-is-go-theere-my-Iewes-neede-worth-And-h',
+                    this["tokenEncryptionKeySha2"] = _0x3be356;
                 }
 
                 return _0x4c4e71[_0x42981f(0x313) + _0x42981f(0x25b)][_0x42981f(0x3b8) + 'te'] = function (_0x3cfd60) {
@@ -7575,4 +7577,4 @@ function a1_0x30db() {
     return a1_0x30db();
 }
 
-
+console.log(reese84);

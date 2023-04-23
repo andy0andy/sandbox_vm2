@@ -23,7 +23,7 @@ function GetCode() {
 }
 
 function ReadCode(name) {
-    return fs.readFileSync(`${__dirname}/${name}`, "utf-8") + "\r\n"
+    return fs.readFileSync(`${__dirname}/${name}`, "utf-8") + "\r\n\r\n"
 }
 
 
