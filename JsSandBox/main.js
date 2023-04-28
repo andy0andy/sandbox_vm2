@@ -1,4 +1,4 @@
-const {VM, VMScript} = require("vm2");
+const {VM, NodeVM, VMScript} = require("vm2");
 const fs = require("fs");
 
 const tools = require(`${__dirname}/tools/tools.node`)  // 工具代码

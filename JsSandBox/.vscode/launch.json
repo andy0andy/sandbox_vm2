@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "无环境浏览器",
+            "name": "vm2调试",
             "program": "${workspaceFolder}/main.js",
             "request": "launch",
             "skipFiles": [
@@ -14,6 +14,7 @@
             "type": "node",
             "runtimeExecutable": "node-inspect"
         },
+
         {
             "type": "node",
             "request": "launch",
