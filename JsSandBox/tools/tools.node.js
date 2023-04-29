@@ -13,16 +13,30 @@ function GetCode() {
 
     // 批量读取
     fs.readdirSync(`${__dirname}`).forEach((filename) => {
-        if (!filename.startsWith("tools.")){
-            code += ReadCode(filename);
-        }
+        fs.stat(`${__dirname}/${filename}`, function(err, stat){
+            if(err){
+                console.log("文件不存在！");
+             }else{
+                if (stat.isFile()){
+                    if (!filename.startsWith("tools.")){
+                        code += ReadCode(filename);
+                    }
+                }else if(stat.isDirectory()){
+                    console.log(filename)
+                }
+               
+             }
+        })
     })
 
     return code;
 
 }
 
+GetCode()
+
 function ReadCode(name) {
+    console.log(`加载 ${__dirname}/${filename}`);
     return fs.readFileSync(`${__dirname}/${name}`, "utf-8") + "\r\n\r\n"
 }
 

@@ -13,8 +13,6 @@ delete GLOBAL;
 window = globalThis;
 Object.setPrototypeOf(window, Window.prototype)
 
-debugger;
-
 
 window.atob = sandbox_vm2.memory["algs"]["base64"].base64decode;
 window.btoa = sandbox_vm2.memory["algs"]["base64"].base64encode;
