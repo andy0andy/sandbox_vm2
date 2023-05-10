@@ -1,4 +1,4 @@
-const {VM, NodeVM, VMScript} = require("vm2");
+const {VM, VMScript} = require("vm2");
 const fs = require("fs");
 
 const tools = require(`${__dirname}/tools/tools.node`)  // 工具代码
@@ -11,6 +11,8 @@ const need_debug_code = fs.readFileSync(`${__dirname}/code/datasheets.js`, "utf-
 
 
 const all_code = tools_code + envs_code + need_debug_code;
+
+console.log(tools_code)
 
 const vm = new VM();
 const script = new VMScript(all_code, "./debugJS.js");
