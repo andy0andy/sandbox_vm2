@@ -8,6 +8,7 @@ const fs = require("fs");
 function GetCode() {
     let code = ""
 
+    // 按顺序排
     code += ReadCode("EventTarget.js");
     code += ReadCode("Node.js");
     code += ReadCode("Document.js");

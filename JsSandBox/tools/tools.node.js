@@ -13,27 +13,21 @@ function GetCode() {
 
     // 批量读取
     fs.readdirSync(`${__dirname}`).forEach((filename) => {
-        fs.stat(`${__dirname}/${filename}`, function(err, stat){
-            if(err){
-                console.log("文件不存在！");
-             }else{
-                if (stat.isFile()){
-                    if (!filename.startsWith("tools.")){
-                        code += ReadCode(filename);
-                    }
-                }else if(stat.isDirectory()){
-                    console.log(filename)
-                }
-               
-             }
-        })
+        let fsStats = fs.statSync(`${__dirname}/${filename}`);
+           
+        if (fsStats.isFile()){
+            if (!filename.startsWith("tools.")){
+                code += ReadCode(filename);
+            }
+        }else if(fsStats.isDirectory()){
+            console.log(filename)
+        }
+        
     })
 
     return code;
 
 }
-
-GetCode()
 
 function ReadCode(name) {
     console.log(`加载 ${__dirname}/${name}`);

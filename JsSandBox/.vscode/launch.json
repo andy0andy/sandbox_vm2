@@ -1,7 +1,4 @@
 {
-    // 使用 IntelliSense 了解相关属性。 
-    // 悬停以查看现有属性的描述。
-    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -14,7 +11,6 @@
             "type": "node",
             "runtimeExecutable": "node-inspect"
         },
-
         {
             "type": "node",
             "request": "launch",
@@ -23,6 +19,12 @@
                 "<node_internals>/**"
             ],
             "program": "F:\\Microsoft VS Code\\<node_internals>\\debugJS.js"
+        },
+        {
+            "type": "node-terminal",
+            "name": "JavaScript 调试终端",
+            "request": "launch",
+            "cwd": "${workspaceFolder}"
         }
     ]
 }

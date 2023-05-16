@@ -12,9 +12,10 @@ const need_debug_code = fs.readFileSync(`${__dirname}/code/datasheets.js`, "utf-
 
 const all_code = tools_code + envs_code + need_debug_code;
 
-console.log(tools_code)
 
-const vm = new VM();
+const vm = new VM({
+    sandbox: {fs, fetch}
+});
 const script = new VMScript(all_code, "./debugJS.js");
 console.log(vm.run(script));
 
