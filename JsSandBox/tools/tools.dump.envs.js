@@ -1,7 +1,6 @@
-
 /*
 自动获取浏览器环境
- */
+*/
 
 
 function getOwnPropertyDescriptors(obj, isSelf) {

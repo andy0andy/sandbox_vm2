@@ -6149,10 +6149,9 @@ var reese84;
 
                 function _0x4c4e71(_0x4841af, _0x39a05c, _0x3be356) {
                     var _0x29036d = a1_0x3299;
-                    debugger;
                     this["httpClient"] = _0x39a05c["bind"](window),
                     // this["postbackUrl"] = "string" == typeof _0x4841af ? _0x4841af : _0x4841af(),
-                    this["postbackUrl"] = 'https://www.datasheets.com/ckly-was-is-go-theere-my-Iewes-neede-worth-And-h',
+                    this["postbackUrl"] = "https://www.datasheets.com/ckly-was-is-go-theere-my-Iewes-neede-worth-And-h",
                     this["tokenEncryptionKeySha2"] = _0x3be356;
                 }
 
@@ -6738,18 +6737,19 @@ var reese84;
                 function _0x166d32() {
                     var _0x2b7a0f = a1_0x3299
                         , _0x57b573 = this;
-                    this[_0x2b7a0f(0x19e) + 'ck'] = void 0x0,
-                        this[_0x2b7a0f(0x1fb) + _0x2b7a0f(0x3c1) + 's'] = void 0x0,
-                        this[_0x2b7a0f(0x1d0) + 'd'] = void 0x0,
-                        document[_0x2b7a0f(0x34f) + _0x2b7a0f(0xff) + _0x2b7a0f(0x277)](_0x2b7a0f(0x3b7), function () {
+                    debugger;
+                    this["callback"] = void 0x0,
+                        this["triggerTimeMs"] = void 0x0,
+                        this["timerId"] = void 0x0,
+                        document["addEventListener"]("online", function () {
                             var _0xc7feef = _0x2b7a0f;
                             return _0x57b573[_0xc7feef(0x3ae)]();
                         }),
-                        document[_0x2b7a0f(0x34f) + _0x2b7a0f(0xff) + _0x2b7a0f(0x277)](_0x2b7a0f(0x27b) + 'ow', function () {
+                        document["addEventListener"]("pageshow", function () {
                             var _0x53e2c4 = _0x2b7a0f;
                             return _0x57b573[_0x53e2c4(0x3ae)]();
                         }),
-                        document[_0x2b7a0f(0x34f) + _0x2b7a0f(0xff) + _0x2b7a0f(0x277)](_0x2b7a0f(0x1f2) + _0x2b7a0f(0x22b) + _0x2b7a0f(0x268), function () {
+                        document["addEventListener"]("visibilitychange", function () {
                             var _0x5604ee = _0x2b7a0f;
                             return _0x57b573[_0x5604ee(0x3ae)]();
                         });

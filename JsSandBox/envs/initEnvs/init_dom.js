@@ -15,5 +15,3 @@ Object.setPrototypeOf(sandbox_vm2.memory["dom"]["Document_getElementsByTagName"]
 
 
 
-
-

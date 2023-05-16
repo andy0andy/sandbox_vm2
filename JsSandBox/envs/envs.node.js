@@ -33,6 +33,7 @@ function GetCode() {
 }
 
 function ReadCode(name) {
+    console.log(`加载envs: ${__dirname}/${name}`);
     return fs.readFileSync(`${__dirname}/${name}`, "utf-8") + "\r\n\r\n"
 }
 

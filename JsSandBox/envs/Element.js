@@ -91,7 +91,7 @@ sandbox_vm2.defineProperty(Element.prototype, 'before', function before(){debugg
 sandbox_vm2.defineProperty(Element.prototype, 'closest', function closest(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Element.prototype.closest)
 sandbox_vm2.defineProperty(Element.prototype, 'computedStyleMap', function computedStyleMap(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Element.prototype.computedStyleMap)
 sandbox_vm2.defineProperty(Element.prototype, 'getAttribute', function getAttribute(attributeName){
-    return this.attributeName;
+    return this[attributeName];
 }, true, true, true); sandbox_vm2.func_set_native(Element.prototype.getAttribute)
 sandbox_vm2.defineProperty(Element.prototype, 'getAttributeNS', function getAttributeNS(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Element.prototype.getAttributeNS)
 sandbox_vm2.defineProperty(Element.prototype, 'getAttributeNames', function getAttributeNames(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Element.prototype.getAttributeNames)

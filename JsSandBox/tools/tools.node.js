@@ -30,7 +30,7 @@ function GetCode() {
 }
 
 function ReadCode(name) {
-    console.log(`加载 ${__dirname}/${name}`);
+    console.log(`加载tools: ${__dirname}/${name}`);
     return fs.readFileSync(`${__dirname}/${name}`, "utf-8") + "\r\n\r\n"
 }
 
