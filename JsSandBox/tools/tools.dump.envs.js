@@ -241,15 +241,15 @@ function get_env_code(obj_proto, obj) {
     } catch (e) {
         if (e.message === "Illegal constructor") {
             code += `
-    sandbox_vm2.throwError("TypeError", "Illegal constructor") 
+            sandbox_vm2.throwError("TypeError", "Illegal constructor") 
 }`
         } else if (e.message.includes("1 argument required, but only 0 present.")) {
             code += `
-    console.log("need 1 argument required! call new ${obj_proto_name} argmuents is " + arguments)
+            sandbox_vm2.log("need 1 argument required! call new ${obj_proto_name} argmuents is " + arguments)
 }`
         } else if (e.message.includes("2 arguments required, but only 0 present.")) {
             code += `
-    console.log("need 2 argument required! call new ${obj_proto_name} argmuents is " + arguments)
+    sandbox_vm2.log("need 2 argument required! call new ${obj_proto_name} argmuents is " + arguments)
 }`
         } else {
             console.error(e)

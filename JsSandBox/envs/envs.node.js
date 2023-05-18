@@ -19,11 +19,24 @@ function GetCode() {
     code += ReadCode("HTMLScriptElement.js");
     code += ReadCode("HTMLCollection.js");
 
+    code += ReadCode("Location.js");
+
+    code += ReadCode("EventCounts.js");
+    code += ReadCode("Performance.js");
+
+    code += ReadCode("NetworkInformation.js");
+
+    code += ReadCode("Plugin.js");
+    code += ReadCode("PluginArray.js");
+    code += ReadCode("MimeType.js");
+    code += ReadCode("MimeTypeArray.js");
+
     code += ReadCode("Window.js");
     code += ReadCode("Navigator.js");
 
-    code += ReadCode("initEnvs/init_bom.js");
+    // 初始化对象
     code += ReadCode("initEnvs/init_dom.js");
+    code += ReadCode("initEnvs/init_bom.js");
 
 
     code += ";debugger;\r\n\r\n"

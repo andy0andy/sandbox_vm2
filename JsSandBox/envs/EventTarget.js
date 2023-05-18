@@ -1,6 +1,6 @@
 EventTarget = function EventTarget(){}
 sandbox_vm2.func_set_native(EventTarget)
-sandbox_vm2.rename(EventTarget.prototype, "EventTarget")
+sandbox_vm2.rename(EventTarget.prototype, "EventTarget") 
 
 sandbox_vm2.defineProperty(EventTarget.prototype, 'addEventListener', function addEventListener(type, callback) {
     if (!(type in sandbox_vm2.memory.events.listeners)) {
@@ -14,7 +14,7 @@ sandbox_vm2.defineProperty(EventTarget.prototype, 'dispatchEvent', function disp
         return;
     }
     var stack = sandbox_vm2.memory.events.listeners[event.type];
-    event.targetCache = this;
+    // event.targetCache = this;
     for (var i = 0, l = stack.length; i < l; i++) {
         stack[i].call(this, event);
     }

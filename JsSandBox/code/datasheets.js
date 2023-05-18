@@ -6108,7 +6108,7 @@ var reese84;
             function _0x231525() {
                 var _0x1f3f5d = _0x51badf
                     , _0x2efa3e = (0x0,
-                    _0x5e09c9[_0x1f3f5d(0x27d) + _0x1f3f5d(0x116) + 'e'])(document[_0x1f3f5d(0x240)], _0x2858b3[_0x1f3f5d(0x168) + _0x1f3f5d(0x1cb)]);
+                    _0x5e09c9["extractCookie"])(document["cookie"], _0x2858b3["COOKIE_NAME"]);
                 null == _0x2efa3e && (_0x2efa3e = (0x0,
                     _0x5e09c9[_0x1f3f5d(0x27d) + _0x1f3f5d(0x116) + 'e'])(document[_0x1f3f5d(0x240)], _0x2858b3[_0x1f3f5d(0x168) + _0x1f3f5d(0x312) + _0x1f3f5d(0x294) + _0x1f3f5d(0x358)]));
                 var _0x2d7ec9 = (function () {
@@ -6737,21 +6737,20 @@ var reese84;
                 function _0x166d32() {
                     var _0x2b7a0f = a1_0x3299
                         , _0x57b573 = this;
-                    debugger;
                     this["callback"] = void 0x0,
                         this["triggerTimeMs"] = void 0x0,
                         this["timerId"] = void 0x0,
                         document["addEventListener"]("online", function () {
                             var _0xc7feef = _0x2b7a0f;
-                            return _0x57b573[_0xc7feef(0x3ae)]();
+                            return _0x57b573["update"]();
                         }),
                         document["addEventListener"]("pageshow", function () {
                             var _0x53e2c4 = _0x2b7a0f;
-                            return _0x57b573[_0x53e2c4(0x3ae)]();
+                            return _0x57b573["update"]();
                         }),
                         document["addEventListener"]("visibilitychange", function () {
                             var _0x5604ee = _0x2b7a0f;
-                            return _0x57b573[_0x5604ee(0x3ae)]();
+                            return _0x57b573["update"]();
                         });
                 }
 
@@ -6877,7 +6876,7 @@ var reese84;
                 , _0x38558f = _0x4a399c(0x207) + _0x4a399c(0xe5) + _0x4a399c(0x349) + 'e';
             _0x24686f[_0x4a399c(0x237) + _0x4a399c(0x328)] = function () {
                 var _0x2f1989 = _0x4a399c
-                    , _0x56fbff = -0x1 !== location[_0x2f1989(0x3af)][_0x2f1989(0x163) + 'f'](_0x38558f);
+                    , _0x56fbff = -0x1 !== location["search"]["indexOf"]("reese84_performance");
                 return performance && _0x56fbff ? new _0x1a03ae(_0x56fbff) : new _0x317ffd();
             }
             ;
@@ -7033,7 +7032,7 @@ var reese84;
 
                 var _0x57f0e2 = _0x4ec3a1
                         , _0x5b2805 = new RegExp(_0x57f0e2(0x32c) + _0x3b0918 + (_0x57f0e2(0x2c5) + '+)'))
-                        , _0x27368a = _0x423116[_0x57f0e2(0x10d)](_0x5b2805);
+                        , _0x27368a = _0x423116["match"](_0x5b2805);
                     return _0x27368a ? _0x27368a[0x2] : null;
                 }
                 ,
@@ -7098,12 +7097,12 @@ var reese84;
                     });
                 }
                 ,
-                _0x46c4f2[_0x4ec3a1(0x261) + _0x4ec3a1(0x1e3) + 'ne'] = function (_0x123e97) {
+                _0x46c4f2["isSearchEngine"] = function (_0x123e97) {
 
                     var _0x110cae = _0x4ec3a1
                         ,
                         _0x449315 = new RegExp(_0x110cae(0x1d7) + _0x110cae(0x223) + _0x110cae(0x1ca) + _0x110cae(0x14a) + _0x110cae(0x206) + _0x110cae(0x126) + _0x110cae(0x2f3) + _0x110cae(0x2aa) + _0x110cae(0x303) + _0x110cae(0x147) + _0x110cae(0x361) + _0x110cae(0x3c3) + _0x110cae(0x278) + _0x110cae(0x270) + _0x110cae(0x2b8) + _0x110cae(0x235) + _0x110cae(0x221) + _0x110cae(0x13b) + _0x110cae(0x2b2) + _0x110cae(0x2f7) + _0x110cae(0x136) + _0x110cae(0x2f9) + _0x110cae(0x3d1), 'i');
-                    return -0x1 !== _0x123e97[_0x110cae(0x3af)](_0x449315);
+                    return -0x1 !== _0x123e97["search"](_0x449315);
                 }
             ;
         },
@@ -7577,4 +7576,4 @@ function a1_0x30db() {
     return a1_0x30db();
 }
 
-console.log(reese84);
+sandbox_vm2.log(reese84);
