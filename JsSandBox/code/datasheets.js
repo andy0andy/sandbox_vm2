@@ -5870,11 +5870,10 @@ var reese84;
                 }, 0x0);
             else {
                 var _0x3f9769 = _0x2c67b1();
-                debugger; // 2
                 setTimeout(function () {
                     var _0xc4b78b = _0x457eff;
                     return (0x0,
-                        _0x48a5f4[_0xc4b78b(0x31e) + _0xc4b78b(0x307) + _0xc4b78b(0x120)])(_0xc4b78b(0x28f) + _0xc4b78b(0x1a7) + _0xc4b78b(0x3c8), _0x3f9769);
+                        _0x48a5f4["callGlobalCallback"])("protectionLoaded", _0x3f9769);
                 }, 0x0);
             }
         },
@@ -6327,7 +6326,7 @@ var reese84;
                                                 _0x1748e4[_0x27c2f8(0x18b) + _0x27c2f8(0x1b1) + 'en'][_0x27c2f8(0x2d3)]([_0xbc704d, _0x1c4988]),
                                                 void 0x0 !== _0x57ffcb && setTimeout(function () {
                                                     var _0x108129 = _0x27c2f8;
-                                                    return _0x1c4988(new Error(_0x108129(0xfa) + _0x108129(0x17d) + _0x108129(0x371) + _0x108129(0x38f) + _0x108129(0x17f)));
+                                                    return _0x1c4988(new Error("Timeout while retrieving token"));
                                                 }, _0x57ffcb);
                                             }
                                         )];
@@ -6401,7 +6400,7 @@ var reese84;
                         void 0x0 === _0x2c087d && (_0x2c087d = !0x1),
                         (0x0,
                             _0x5e09c9[_0x32510b(0x261) + _0x32510b(0x1e3) + 'ne'])(window[_0x32510b(0x34c) + _0x32510b(0x205)][_0x32510b(0x385) + _0x32510b(0x353)]) || (this[_0x32510b(0x15f) + 'd'] = !0x0,
-                            _0x32510b(0x2fe) + 'g' === document[_0x32510b(0x145) + _0x32510b(0x372)] ? document[_0x32510b(0x34f) + _0x32510b(0xff) + _0x32510b(0x277)](_0x32510b(0x376) + _0x32510b(0x2a0) + _0x32510b(0x3c8), function () {
+                            "loading" === document["readyState"] ? document["addEventListener"]("DOMContentLoaded", function () {
                                 var _0x382779 = _0x32510b;
                                 return _0x18c6c9[_0x382779(0x2ac) + _0x382779(0x36b) + 'l'](_0x2c087d);
                             }) : this[_0x32510b(0x2ac) + _0x32510b(0x36b) + 'l'](_0x2c087d));

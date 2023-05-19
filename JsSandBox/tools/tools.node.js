@@ -38,7 +38,7 @@ function GetCode(flag) {
     // 批量读取
     all_sub_filepath(__dirname).forEach((filename) => {
 
-        if (!filename.startsWith("tools.") || filename.indexOf(flag) != -1){
+        if (!filename.startsWith("tools.") || filename.indexOf(flag) !== -1){
             code += ReadCode(filename);
         }
         

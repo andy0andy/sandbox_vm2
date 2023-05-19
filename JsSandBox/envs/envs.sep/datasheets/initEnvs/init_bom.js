@@ -22,7 +22,7 @@ window = sandbox_vm2.proxy(window, "window");
 
 
 // doucment
-document = {}
+document = sandbox_vm2.memory?.bom?.document ? sandbox_vm2.memory?.bom?.document : {}
 Object.setPrototypeOf(document, HTMLDocument.prototype);
 document = sandbox_vm2.proxy(document, "document");
 

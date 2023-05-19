@@ -5,5 +5,5 @@
 *.ali
 
 
-.idea
-.vscode
+*.idea*
+*.vscode*
