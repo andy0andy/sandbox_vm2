@@ -205,8 +205,10 @@ sandbox_vm2.defineProperty(Document.prototype, 'getElementById', function getEle
 sandbox_vm2.defineProperty(Document.prototype, 'getElementsByClassName', function getElementsByClassName(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.getElementsByClassName)
 sandbox_vm2.defineProperty(Document.prototype, 'getElementsByName', function getElementsByName(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.getElementsByName)
 sandbox_vm2.defineProperty(Document.prototype, 'getElementsByTagName', function getElementsByTagName(name){
-    if (sandbox_vm2.memory["dom"]["Document_getElementsByTagName"][`datasheets_${name}`]){
-        return sandbox_vm2.memory["dom"]["Document_getElementsByTagName"][`datasheets_${name}`];
+
+    let script_list = sandbox_vm2?.memory?.dom?.script_list;
+    if (script_list) {
+        return script_list;
     }
     debugger;
 }, true, true, true); sandbox_vm2.func_set_native(Document.prototype.getElementsByTagName)

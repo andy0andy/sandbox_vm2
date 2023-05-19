@@ -5,7 +5,7 @@ const fs = require("fs");
  */
 
 
-function GetCode() {
+function GetCode(flag) {
     let code = ""
 
     // 按顺序排
@@ -35,8 +35,8 @@ function GetCode() {
     code += ReadCode("Navigator.js");
 
     // 初始化对象
-    code += ReadCode("initEnvs/init_dom.js");
-    code += ReadCode("initEnvs/init_bom.js");
+    code += ReadCode(`envs.sep/${flag}/initEnvs/init_dom.js`);
+    code += ReadCode(`envs.sep/${flag}/initEnvs/init_bom.js`);
 
 
     code += ";debugger;\r\n\r\n"
@@ -44,6 +44,7 @@ function GetCode() {
 
     return code;
 }
+
 
 function ReadCode(name) {
     console.log(`加载envs: ${__dirname}/${name}`);

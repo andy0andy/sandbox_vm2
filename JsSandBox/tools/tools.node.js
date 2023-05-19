@@ -2,7 +2,7 @@ const fs = require("fs");
 
 /*
 整合代码，工具js
- */
+*/
 
 function all_sub_filepath(cur_file){
     /*
@@ -30,7 +30,7 @@ function all_sub_filepath(cur_file){
 }
 
 
-function GetCode() {
+function GetCode(flag) {
     let code = ""
 
     code += ReadCode("tools.config.js")     // 配置
@@ -38,7 +38,7 @@ function GetCode() {
     // 批量读取
     all_sub_filepath(__dirname).forEach((filename) => {
 
-        if (!filename.startsWith("tools.") || filename.endsWith("memory.js")){
+        if (!filename.startsWith("tools.") || filename.indexOf(flag) != -1){
             code += ReadCode(filename);
         }
         
@@ -49,7 +49,6 @@ function GetCode() {
 
 }
 
-GetCode()
 
 
 function ReadCode(name) {

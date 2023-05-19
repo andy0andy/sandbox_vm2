@@ -31,4 +31,6 @@ sandbox_vm2.defineProperty(Performance.prototype, 'eventCounts', undefined, true
         Object.setPrototypeOf(rtn, EventCounts.prototype);
         return rtn;
     }
+
+    return {}
 },);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Performance.prototype)["eventCounts"].get, "get eventCounts");
