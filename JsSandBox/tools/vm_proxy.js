@@ -3,7 +3,6 @@ hook 环境
  */
 
 
-
 sandbox_vm2.proxy = function (obj, objname, type) {
     if (sandbox_vm2.config.proxy === false) {
         return obj

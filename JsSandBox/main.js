@@ -15,7 +15,7 @@ const need_debug_code = fs.readFileSync(`${__dirname}/code/${flag}.js`, "utf-8")
 const all_code = tools_code + envs_code + need_debug_code;
 
 const vm = new VM({
-    sandbox: {flag, fs, fetch}
+    sandbox: {flag, fs, fetch, setTimeout, clearTimeout}
 });
 const script = new VMScript(all_code, "./debugJS.js");
 console.log(vm.run(script));

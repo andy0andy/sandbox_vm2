@@ -43,6 +43,3 @@ Object.setPrototypeOf(performance, Performance.prototype);
 performance = sandbox_vm2.proxy(performance, "performance");
 
 
-
-
-
