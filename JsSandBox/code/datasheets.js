@@ -5931,6 +5931,7 @@ var reese84;
                             function _0x52514a(_0x1bc5ce) {
                                 var _0x3a7e68 = a1_0x3299;
                                 try {
+                                    debugger;
                                     _0x4e0a5a(_0x1823f0[_0x3a7e68(0x1bb)](_0x1bc5ce));
                                 } catch (_0x227aea) {
                                     _0x46747a(_0x227aea);
@@ -6397,6 +6398,7 @@ var reese84;
                     _0x1af14f[_0x3e74a1(0x313) + _0x3e74a1(0x25b)][_0x3e74a1(0x3cf)] = function (_0x2c087d) {
                         var _0x32510b = _0x3e74a1
                             , _0x18c6c9 = this;
+                        debugger;
                         void 0x0 === _0x2c087d && (_0x2c087d = !0x1),
                         (0x0,
                             _0x5e09c9[_0x32510b(0x261) + _0x32510b(0x1e3) + 'ne'])(window[_0x32510b(0x34c) + _0x32510b(0x205)][_0x32510b(0x385) + _0x32510b(0x353)]) || (this[_0x32510b(0x15f) + 'd'] = !0x0,
@@ -7052,6 +7054,7 @@ var reese84;
                                 return _0x8c73c4[_0x5602c5(0x344) + _0x5602c5(0x36f)](_0x39a78d);
                         return null;
                     }(_0xc6367a);
+                    debugger;
                     document["cookie"] = _0x44eb2a(_0xa13e56, _0x599c06, _0x119fe6, _0x436e70, _0x202368);
                     for (var _0x33ec2e = 0x0, _0x10d167 = _0x2fa97b; _0x33ec2e < _0x10d167[_0xd46cfb(0x3bc)]; _0x33ec2e++) {
                         var _0x42efa6 = _0x10d167[_0x33ec2e];
@@ -7574,7 +7577,7 @@ function a1_0x30db() {
     return a1_0x30db();
 }
 
-sandbox_vm2.log(`reese84 = ${reese84()}`);
+sandbox_vm2.log(`reese84 = ${reese84}`);
 
 
 

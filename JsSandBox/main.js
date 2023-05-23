@@ -20,11 +20,4 @@ const vm = new VM({
 const script = new VMScript(all_code, "./debugJS.js");
 console.log(vm.run(script));
 
-/*
-let script_list = sandbox_vm2?.memory?.dom?.script_list;
-    if (script_list) {
-        return script_list;
-    }
-    debugger;
- */
 
