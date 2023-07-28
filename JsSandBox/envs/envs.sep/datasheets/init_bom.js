@@ -28,7 +28,7 @@ document = sandbox_vm2.proxy(document, "document");
 
 
 // navigator
-navigator = {};
+navigator = sandbox_vm2.memory?.bom?.navigator ? sandbox_vm2.memory?.bom?.navigator : {}
 Object.setPrototypeOf(navigator, Navigator.prototype)
 navigator = sandbox_vm2.proxy(navigator, "navigator");
 

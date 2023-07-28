@@ -29,16 +29,23 @@ function all_sub_filepath(cur_file){
     return path_list;
 }
 
-
 function GetCode(flag) {
     let code = ""
 
     code += ReadCode("tools.config.js")     // 配置
 
     // 批量读取
+    // 先读取初始化文件
     all_sub_filepath(__dirname).forEach((filename) => {
 
-        if (!filename.startsWith("tools.") || filename.indexOf(flag) !== -1){
+        if (filename.indexOf("/init/") !== -1){
+            code += ReadCode(filename);
+        }
+        
+    })
+    all_sub_filepath(__dirname).forEach((filename) => {
+
+        if ((!filename.startsWith("tools.") || filename.indexOf(flag) !== -1) && filename.indexOf("/init/") === -1){
             code += ReadCode(filename);
         }
         
@@ -48,7 +55,7 @@ function GetCode(flag) {
     return code;
 
 }
-
+GetCode("rs5")
 
 
 function ReadCode(name) {

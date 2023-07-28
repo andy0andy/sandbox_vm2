@@ -35,8 +35,11 @@ function GetCode(flag) {
     code += ReadCode("Navigator.js");
 
     // 初始化对象
-    code += ReadCode(`envs.sep/${flag}/initEnvs/init_dom.js`);
-    code += ReadCode(`envs.sep/${flag}/initEnvs/init_bom.js`);
+    code += ReadCode(`envs.sep/init/init_dom.js`);
+    code += ReadCode(`envs.sep/init/init_bom.js`);
+
+    code += ReadCode(`envs.sep/${flag}/init_dom.js`);
+    code += ReadCode(`envs.sep/${flag}/init_bom.js`);
 
 
     code += ";debugger;\r\n\r\n"

@@ -5,12 +5,15 @@ const tools = require(`${__dirname}/tools/tools.node`)  // 工具代码
 const envs = require(`${__dirname}/envs/envs.node`)  // 环境代码
 
 // 目标标识, 切换网站时更改
-const flag = "datasheets"
+// const flag = "datasheets"
+// const need_debug_code = fs.readFileSync(`${__dirname}/code/${flag}.js`, "utf-8")
+// ====
+const flag = "rs5"
+const need_debug_code = fs.readFileSync(`${__dirname}/code/${flag}/${flag}.js`, "utf-8")
+
 
 const tools_code = tools.GetCode(flag)
 const envs_code = envs.GetCode(flag)
-const need_debug_code = fs.readFileSync(`${__dirname}/code/${flag}.js`, "utf-8")
-
 
 const all_code = tools_code + envs_code + need_debug_code;
 
