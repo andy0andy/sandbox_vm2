@@ -29,23 +29,15 @@ function all_sub_filepath(cur_file){
     return path_list;
 }
 
-function GetCode(flag) {
+function GetCode() {
     let code = ""
 
     code += ReadCode("tools.config.js")     // 配置
+    code += ReadCode("tools.memory.js")     // 对象默认值
 
-    // 批量读取
-    // 先读取初始化文件
     all_sub_filepath(__dirname).forEach((filename) => {
 
-        if (filename.indexOf("/init/") !== -1){
-            code += ReadCode(filename);
-        }
-        
-    })
-    all_sub_filepath(__dirname).forEach((filename) => {
-
-        if ((!filename.startsWith("tools.") || filename.indexOf(flag) !== -1) && filename.indexOf("/init/") === -1){
+        if (!filename.startsWith("tools.")){
             code += ReadCode(filename);
         }
         
@@ -55,7 +47,6 @@ function GetCode(flag) {
     return code;
 
 }
-GetCode("rs5")
 
 
 function ReadCode(name) {

@@ -5,43 +5,24 @@ const fs = require("fs");
  */
 
 
-function GetCode(flag) {
+function GetCode() {
     let code = ""
 
     // 按顺序排
+    
     code += ReadCode("EventTarget.js");
     code += ReadCode("Node.js");
+
     code += ReadCode("Document.js");
     code += ReadCode("HTMLDocument.js");
-    
-    code += ReadCode("Element.js");
-    code += ReadCode("HTMLElement.js");
-    code += ReadCode("HTMLScriptElement.js");
-    code += ReadCode("HTMLCollection.js");
-
-    code += ReadCode("Location.js");
-
-    code += ReadCode("EventCounts.js");
-    code += ReadCode("Performance.js");
-
-    code += ReadCode("NetworkInformation.js");
-
-    code += ReadCode("Plugin.js");
-    code += ReadCode("PluginArray.js");
-    code += ReadCode("MimeType.js");
-    code += ReadCode("MimeTypeArray.js");
 
     code += ReadCode("Window.js");
     code += ReadCode("Navigator.js");
 
     // 初始化对象
-    code += ReadCode(`envs.sep/init/init_dom.js`);
-    code += ReadCode(`envs.sep/init/init_bom.js`);
-
-    code += ReadCode(`envs.sep/${flag}/init_dom.js`);
-    code += ReadCode(`envs.sep/${flag}/init_bom.js`);
-
-
+    code += ReadCode(`init_dom.js`);
+    code += ReadCode(`init_bom.js`);
+ 
     code += ";debugger;\r\n\r\n"
 
 

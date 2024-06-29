@@ -39,18 +39,28 @@ sandbox_vm2.defineProperty(Navigator.prototype, 'connection', undefined, true, t
     }
 },);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Navigator.prototype)["connection"].get, "get connection");
 sandbox_vm2.defineProperty(Navigator.prototype, 'plugins', undefined, true, true, undefined, function () {
-    let plugins = sandbox_vm2.memory?.bom?.navigator?.plugins;
-    if(plugins){
-        let rtn = [];
-        for (let i=0;i< plugins.length;i++){
-            let plugin = plugins[i];
-            Object.setPrototypeOf(plugin, Plugin.prototype)
-            rtn.push(plugin)
-        }
+    plugins = []
+    if (sandbox_vm2.memory?.bom?.plugins){
+        for (let i = 0; i < sandbox_vm2.memory?.bom?.plugins.length; i++) {
+            
+            mimetype_0 = sandbox_vm2.memory?.bom?.plugins[i]['0']; 
+            Object.setPrototypeOf(mimetype_0, MimeType.prototype);
 
-        Object.setPrototypeOf(rtn, PluginArray.prototype)
-        return rtn;
+            mimetype_1 = sandbox_vm2.memory?.bom?.plugins[i]['1']; 
+            Object.setPrototypeOf(mimetype_1, MimeType.prototype);
+
+            plugin = sandbox_vm2.memory?.bom?.plugins[i];
+            plugin["0"] = mimetype_0;
+            plugin["1"] = mimetype_1;
+            Object.setPrototypeOf(plugin, Plugin.prototype);
+
+            plugins.push(plugin);
+        }
     }
+    Object.setPrototypeOf(plugins, PluginArray.prototype);
+
+    return plugins;
+
 },);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Navigator.prototype)["plugins"].get, "get plugins");
 sandbox_vm2.defineProperty(Navigator.prototype, 'mimeTypes', undefined, true, true, undefined, function () {
     let mimeTypes = sandbox_vm2.memory?.bom?.navigator?.mimeTypes;
@@ -142,7 +152,9 @@ sandbox_vm2.defineProperty(Navigator.prototype, 'webdriver', undefined, true, tr
     }
 },);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Navigator.prototype)["webdriver"].get, "get webdriver");
 sandbox_vm2.defineProperty(Navigator.prototype, 'getGamepads', function getGamepads(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Navigator.prototype.getGamepads)
-sandbox_vm2.defineProperty(Navigator.prototype, 'javaEnabled', function javaEnabled(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Navigator.prototype.javaEnabled)
+sandbox_vm2.defineProperty(Navigator.prototype, 'javaEnabled', function javaEnabled(){
+    return false;
+}, true, true, true); sandbox_vm2.func_set_native(Navigator.prototype.javaEnabled)
 sandbox_vm2.defineProperty(Navigator.prototype, 'sendBeacon', function sendBeacon(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Navigator.prototype.sendBeacon)
 sandbox_vm2.defineProperty(Navigator.prototype, 'vibrate', function vibrate(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Navigator.prototype.vibrate)
 

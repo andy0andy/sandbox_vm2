@@ -1,6 +1,6 @@
 /*
 hook 环境
- */
+ */ 
 
 
 sandbox_vm2.proxy = function (obj, objname, type) {
@@ -18,7 +18,7 @@ sandbox_vm2.proxy = function (obj, objname, type) {
                     } else if (WatchName === "window.console") {
                     } else {
                         sandbox_vm2.log(`[${WatchName}] apply function name is [${target.name}], argArray is [${argArray}], result is [${result}].`)
-                    }
+                   }
                 } else {
                     sandbox_vm2.log(`[${WatchName}] apply function name is [${target.name}], argArray is [${argArray}], result is [${result}].`)
                 }
@@ -47,12 +47,13 @@ sandbox_vm2.proxy = function (obj, objname, type) {
                     }
                     else {
                         sandbox_vm2.log(`[${WatchName}] getting propKey is [${propKey}], result is [${(result)}]`);
+                        return new Proxy(result, getObjhandler(`${WatchName}.${propKey}`))
                     }
-                    return new Proxy(result, getObjhandler(`${WatchName}.${propKey}`))
+            
                 }
                 // if(typeof(propKey) !== "symbol" && propKey !== "toString"){
                 if (typeof (propKey) !== "symbol") {
-                    sandbox_vm2.log(`[${WatchName}] getting propKey is [${propKey?.description ?? propKey}], result is [${result}]`);
+                    sandbox_vm2.log(`[${WatchName}] getting propKey is [${propKey?.description ?? propKey}], result is [${result}]`)
                 }
                 return result;
             },
@@ -74,11 +75,11 @@ sandbox_vm2.proxy = function (obj, objname, type) {
                 sandbox_vm2.log(`[${WatchName}] delete propKey [${propKey}], result is [${result}]`)
                 return result;
             },
-            // getOwnPropertyDescriptor(target, propKey) {
-            //     var result = Reflect.getOwnPropertyDescriptor(target, propKey);
-            //     sandbox_vm2.log(`[${WatchName}] getOwnPropertyDescriptor  propKey [${propKey}] result is [${(result)}]`)
-            //     return result;
-            // },
+            getOwnPropertyDescriptor(target, propKey) {
+                var result = Reflect.getOwnPropertyDescriptor(target, propKey);
+                sandbox_vm2.log(`[${WatchName}] getOwnPropertyDescriptor  propKey [${propKey}] result is [${(result)}]`)
+                return result;
+            },
             defineProperty(target, propKey, attributes) {
                 var result = Reflect.defineProperty(target, propKey, attributes);
                 sandbox_vm2.log(`[${WatchName}] defineProperty propKey [${propKey}] attributes is [${(attributes)}], result is [${result}]`)

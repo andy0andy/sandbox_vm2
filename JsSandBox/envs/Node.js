@@ -5,7 +5,7 @@ sandbox_vm2.func_set_native(Node)
 sandbox_vm2.rename(Node.prototype, "Node")
 
 Object.setPrototypeOf(Node.prototype,EventTarget.prototype)
-
+ 
 
 sandbox_vm2.defineProperty(Node, 'ELEMENT_NODE', 1, false, true, false);
 sandbox_vm2.defineProperty(Node, 'ATTRIBUTE_NODE', 2, false, true, false);

@@ -93,4 +93,4 @@ base64.base64decode = function base64decode(str) {
 }
 
 sandbox_vm2.memory["algs"]["base64"] = base64;
-// sandbox_vm2.log(base64.base64decode("123"))
+// sandbox_vm2.log(base64.base64decode("123"))z

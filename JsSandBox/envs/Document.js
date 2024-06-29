@@ -2,18 +2,25 @@ Document = function Document(){debugger;
 }
 sandbox_vm2.func_set_native(Document)
 sandbox_vm2.rename(Document.prototype, "Document")
-
+ 
 Object.setPrototypeOf(Document.prototype,Node.prototype)
 sandbox_vm2.defineProperty(Document.prototype, 'implementation', undefined, true, true, undefined, function () {debugger},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["implementation"].get, "get implementation");
 sandbox_vm2.defineProperty(Document.prototype, 'URL', undefined, true, true, undefined, function () {debugger},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["URL"].get, "get URL");
 sandbox_vm2.defineProperty(Document.prototype, 'documentURI', undefined, true, true, undefined, function () {debugger},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["documentURI"].get, "get documentURI");
-sandbox_vm2.defineProperty(Document.prototype, 'compatMode', undefined, true, true, undefined, function () {debugger},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["compatMode"].get, "get compatMode");
+sandbox_vm2.defineProperty(Document.prototype, 'compatMode', undefined, true, true, undefined, function () {
+    return "CSS1Compat";
+},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["compatMode"].get, "get compatMode");
 sandbox_vm2.defineProperty(Document.prototype, 'characterSet', undefined, true, true, undefined, function () {debugger},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["characterSet"].get, "get characterSet");
 sandbox_vm2.defineProperty(Document.prototype, 'charset', undefined, true, true, undefined, function () {debugger},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["charset"].get, "get charset");
 sandbox_vm2.defineProperty(Document.prototype, 'inputEncoding', undefined, true, true, undefined, function () {debugger},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["inputEncoding"].get, "get inputEncoding");
 sandbox_vm2.defineProperty(Document.prototype, 'contentType', undefined, true, true, undefined, function () {debugger},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["contentType"].get, "get contentType");
 sandbox_vm2.defineProperty(Document.prototype, 'doctype', undefined, true, true, undefined, function () {debugger},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["doctype"].get, "get doctype");
-sandbox_vm2.defineProperty(Document.prototype, 'documentElement', undefined, true, true, undefined, function () {debugger},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["documentElement"].get, "get documentElement");
+sandbox_vm2.defineProperty(Document.prototype, 'documentElement', undefined, true, true, undefined, function () {
+    let h = "<html><head><title></title></head> <body></body></html>";
+    Object.setPrototypeOf(h, HTMLHtmlElement.prototype);
+    return h
+
+},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["documentElement"].get, "get documentElement");
 sandbox_vm2.defineProperty(Document.prototype, 'xmlEncoding', undefined, true, true, undefined, function () {debugger},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["xmlEncoding"].get, "get xmlEncoding");
 sandbox_vm2.defineProperty(Document.prototype, 'xmlVersion', undefined, true, true, undefined, function () {debugger},function (value) {debugger});sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["xmlVersion"].get, "get xmlVersion");sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["xmlVersion"].set, "set xmlVersion");
 sandbox_vm2.defineProperty(Document.prototype, 'xmlStandalone', undefined, true, true, undefined, function () {debugger},function (value) {debugger});sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["xmlStandalone"].get, "get xmlStandalone");sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["xmlStandalone"].set, "set xmlStandalone");
@@ -24,8 +31,20 @@ sandbox_vm2.defineProperty(Document.prototype, 'lastModified', undefined, true, 
 sandbox_vm2.defineProperty(Document.prototype, 'readyState', undefined, true, true, undefined, function () {debugger},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["readyState"].get, "get readyState");
 sandbox_vm2.defineProperty(Document.prototype, 'title', undefined, true, true, undefined, function () {debugger},function (value) {debugger});sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["title"].get, "get title");sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["title"].set, "set title");
 sandbox_vm2.defineProperty(Document.prototype, 'dir', undefined, true, true, undefined, function () {debugger},function (value) {debugger});sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["dir"].get, "get dir");sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["dir"].set, "set dir");
-sandbox_vm2.defineProperty(Document.prototype, 'body', undefined, true, true, undefined, function () {debugger},function (value) {debugger});sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["body"].get, "get body");sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["body"].set, "set body");
-sandbox_vm2.defineProperty(Document.prototype, 'head', undefined, true, true, undefined, function () {debugger},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["head"].get, "get head");
+sandbox_vm2.defineProperty(Document.prototype, 'body', undefined, true, true, undefined, function () {
+
+    let body = "<body></body>";
+    Object.setPrototypeOf(body, HTMLBodyElement.prototype);
+
+    return body;
+
+},function (value) {debugger});sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["body"].get, "get body");sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["body"].set, "set body");
+sandbox_vm2.defineProperty(Document.prototype, 'head', undefined, true, true, undefined, function () {
+    let head = "<head></head>";
+    Object.setPrototypeOf(head, HTMLHeadElement.prototype);
+
+    return head;
+},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["head"].get, "get head");
 sandbox_vm2.defineProperty(Document.prototype, 'images', undefined, true, true, undefined, function () {debugger},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["images"].get, "get images");
 sandbox_vm2.defineProperty(Document.prototype, 'embeds', undefined, true, true, undefined, function () {debugger},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["embeds"].get, "get embeds");
 sandbox_vm2.defineProperty(Document.prototype, 'plugins', undefined, true, true, undefined, function () {debugger},);sandbox_vm2.func_set_native(Object.getOwnPropertyDescriptors(Document.prototype)["plugins"].get, "get plugins");
@@ -188,9 +207,79 @@ sandbox_vm2.defineProperty(Document.prototype, 'createAttributeNS', function cre
 sandbox_vm2.defineProperty(Document.prototype, 'createCDATASection', function createCDATASection(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.createCDATASection)
 sandbox_vm2.defineProperty(Document.prototype, 'createComment', function createComment(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.createComment)
 sandbox_vm2.defineProperty(Document.prototype, 'createDocumentFragment', function createDocumentFragment(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.createDocumentFragment)
-sandbox_vm2.defineProperty(Document.prototype, 'createElement', function createElement(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.createElement)
+sandbox_vm2.defineProperty(Document.prototype, 'createElement', function createElement(tagName){
+
+    // let ele = `<${tagName}></${tagName}>`; 
+    let ele = {}
+    if (tagName === 'div'){
+        Object.setPrototypeOf(ele, HTMLDivElement.prototype);
+    }else if(tagName === 'canvas'){
+        Object.setPrototypeOf(ele, HTMLCanvasElement.prototype);
+    }else if(tagName === 'i'){
+        Object.setPrototypeOf(ele, HTMLElement.prototype);
+    }else{
+        debugger;
+        Object.setPrototypeOf(ele, HTMLUnknownElement.prototype);
+    }
+
+
+    // 存入内存 dom
+    if (!sandbox_vm2.memory.dom?.tagName){
+        sandbox_vm2.memory.dom.tagName = [];
+    }
+
+    // 标签属性
+    ele.__index = sandbox_vm2.memory.dom.tagName.length;
+    ele.__tagName = tagName;
+
+    sandbox_vm2.memory.dom.tagName.push(ele);
+
+    return ele
+
+}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.createElement)
 sandbox_vm2.defineProperty(Document.prototype, 'createElementNS', function createElementNS(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.createElementNS)
-sandbox_vm2.defineProperty(Document.prototype, 'createEvent', function createEvent(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.createEvent)
+sandbox_vm2.defineProperty(Document.prototype, 'createEvent', function createEvent(type){
+    let type_list = [
+        "UIEvents",
+        "MouseEvents",
+        "MutationEvents",
+        "HTMLEvents",
+        "UIEvent",
+        "MouseEvent",
+        "MutationEvent",
+        "MutationNameEvent",
+        "TextEvent",
+        "TextEvents",
+        "KeyboardEvent",
+        "KeyEvents",
+        "CustomEvent",
+        "Event",
+        "Events",
+        "SVGEvents",
+        "SVGEvent",
+        "SVGZoomEvents",
+        "SVGZoomEvent",
+        "MessageEvent",
+        "MouseScrollEvents",
+        "PopupEvents",
+        "PopupBlockedEvents",
+        "XULCommandEvent",
+        "XULCommandEvents",
+        "ProgressEvent",
+        "AnimationEvent",
+        "WebKitAnimationEvent",
+        "TransitionEvent",
+        "WebKitTransitionEvent",
+    ]
+    // if (type_list.indexOf(type) == -1){
+    //     let e = new Error(`createEvent 事件类型错误. ${type} `)
+    //     throw e;
+    // }
+
+    let e = new Event(type);
+    return e;
+
+}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.createEvent)
 sandbox_vm2.defineProperty(Document.prototype, 'createExpression', function createExpression(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.createExpression)
 sandbox_vm2.defineProperty(Document.prototype, 'createNSResolver', function createNSResolver(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.createNSResolver)
 sandbox_vm2.defineProperty(Document.prototype, 'createNodeIterator', function createNodeIterator(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.createNodeIterator)
@@ -208,12 +297,16 @@ sandbox_vm2.defineProperty(Document.prototype, 'exitPointerLock', function exitP
 sandbox_vm2.defineProperty(Document.prototype, 'getElementById', function getElementById(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.getElementById)
 sandbox_vm2.defineProperty(Document.prototype, 'getElementsByClassName', function getElementsByClassName(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.getElementsByClassName)
 sandbox_vm2.defineProperty(Document.prototype, 'getElementsByName', function getElementsByName(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.getElementsByName)
-sandbox_vm2.defineProperty(Document.prototype, 'getElementsByTagName', function getElementsByTagName(){
-    let script_list = sandbox_vm2?.memory?.dom?.script_list;
-    if (script_list) {
-        return script_list;
+sandbox_vm2.defineProperty(Document.prototype, 'getElementsByTagName', function getElementsByTagName(tagName){
+    let eles = []
+    
+    if (sandbox_vm2.memory.dom?.tagName){
+        eles = sandbox_vm2.memory.dom.tagName;
     }
-    debugger;
+
+    Object.setPrototypeOf(eles, HTMLCollection.prototype);
+
+    return eles;
 }, true, true, true); sandbox_vm2.func_set_native(Document.prototype.getElementsByTagName)
 sandbox_vm2.defineProperty(Document.prototype, 'getElementsByTagNameNS', function getElementsByTagNameNS(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.getElementsByTagNameNS)
 sandbox_vm2.defineProperty(Document.prototype, 'getSelection', function getSelection(){debugger;}, true, true, true); sandbox_vm2.func_set_native(Document.prototype.getSelection)
