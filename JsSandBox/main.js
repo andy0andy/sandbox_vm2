@@ -5,9 +5,8 @@ const tools = require(`${__dirname}/tools/tools.node`)  // 工具代码
 const envs = require(`${__dirname}/envs/envs.node`)  // 环境代码
 
 // 目标标识, 切换网站时更改
-const need_debug_code = fs.readFileSync(`${__dirname}/code/yrx-06/06.js`, "utf-8")
-// const need_debug_code = fs.readFileSync(`${__dirname}/code/yidun/watchman.js`, "utf-8")
-// const need_debug_code = fs.readFileSync(`${__dirname}/code/yidun/core.js`, "utf-8")
+const need_debug_code = fs.readFileSync(`${__dirname}/code/yrx-64/64.js`, "utf-8")
+
 
 
 

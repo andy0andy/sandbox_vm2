@@ -244,6 +244,52 @@ sandbox_vm2.memory = {
                 "redirectCount": 0
             }
         },
+        "canvas": {
+            "value1": "-1752298761",
+            "value2": "-1489780605"
+        },
+        "CanvasRenderingContext2D": {
+            "direction": "ltr",
+            "fillStyle": "#000000",
+            "filter": "none",
+            "font": "10px sans-serif",
+            "fontKerning": "auto",
+            "fontStretch": "normal",
+            "fontVariantCaps": "normal",
+            "globalAlpha": 1,
+            "globalCompositeOperation": "source-over",
+            "imageSmoothingEnabled": true,
+            "imageSmoothingQuality": "low",
+            "letterSpacing": "0px",
+            "lineCap": "butt",
+            "lineDashOffset": 0,
+            "lineJoin": "miter",
+            "lineWidth": 1,
+            "miterLimit": 10,
+            "shadowBlur": 0,
+            "shadowColor": "rgba(0, 0, 0, 0)",
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0,
+            "strokeStyle": "#000000",
+            "textAlign": "start",
+            "textBaseline": "alphabetic",
+            "textRendering": "auto",
+            "wordSpacing": "0px",
+        },
+        "fonts_optm": "12,15,16,17,3,40,44",
+        "fonts": "12,15,16,17,3,40,44",
+        "rCFP": "-939652868",
+        "ssh": "1a515017c62aca191b55ee20c5b9829474704960334af25a02bf7e90aa3ed1aa",
+        "mr": "20,40,40,20,40,40,20,0,0,0,0,0,0,140,",
+        "brave": "0",
+        "wv": "Google Inc. (Google)",
+        "wr": "ANGLE (Google, Vulkan 1.2.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver-5.0.0)",
+        "weh": "de8d0b0e44647526ac3c26f56df5845576b8ce4bec1d7c4e82fce9f214fb152a",
+        "wl": 34,
+        "fmh": "2a9eadd8df3b18fb8899addb2a49d5c86d0b07d2f88b5d0032ff3803215b78b9",
+        "fmz": 1,
+        "fpValstr": "-1752298761;-1489780605;dis;,7;true;true;true;-480;true;24;24;true;false;-1",
+        "np": "11321144241322243122",
         "screen": {
             "availHeight": 1040,
             "availLeft": 0,
@@ -257,9 +303,24 @@ sandbox_vm2.memory = {
         "localStorage": {},
         "sessionStorage": {},
         "location": {
+            "ancestorOrigins": {},
+            "href": "https://m.ic.net.cn/subMember/register/register",
+            "origin": "https://m.ic.net.cn",
+            "protocol": "https:",
+            "host": "m.ic.net.cn",
+            "hostname": "m.ic.net.cn",
+            "port": "",
+            "pathname": "/subMember/register/register",
+            "search": "",
+            "hash": ""
         },
         "history": {
-            
+            "length": 9,
+            "scrollRestoration": "auto",
+            "state": {
+                "id": 5,
+                "key": "483.300"
+            }
         },
     },
     "algs": {},  // 算法&函数

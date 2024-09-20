@@ -7,11 +7,11 @@ sandbox_vm2.throwError = function throwError (name, message) {
 
 }
 
-Error.prepareStackTrace = function (error, structuredStackTrace) {
-    sandbox_vm2.log("异常打印： ", error)
-    debugger;
-    return error
-};
+// Error.prepareStackTrace = function (error, structuredStackTrace) {
+//     sandbox_vm2.log("异常打印： ", error)
+//     debugger;
+//     return error
+// };
 
 function newError(name, message) {
     switch (name) {
